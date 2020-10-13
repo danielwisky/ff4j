@@ -14,7 +14,7 @@
 	<parent>
 		<groupId>org.ff4j</groupId>
 		<artifactId>ff4j-parent</artifactId>
-		<version>1.8.11-SNAPSHOT</version>
+		<version>1.8.10-fork-hotfix</version>
 	</parent>
 
 	<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
@@ -30,22 +30,22 @@
 	<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
 	<dependencies>
 	
-		<!--  core -->
+		<!-- core -->
 		<dependency>
 			<artifactId>ff4j-core</artifactId>
 			<groupId>org.ff4j</groupId>
 			<version>${project.version}</version>
 		</dependency>
 
-        <dependency>
-            <groupId>org.mongodb</groupId>
-            <artifactId>mongo-java-driver</artifactId>
-            <version>3.12.7</version><!--$NO-MVN-MAN-VER$-->
-            <scope>provided</scope> <!-- provided to NOT FIX the version -->
-        </dependency>
+		<dependency>
+			<groupId>org.mongodb</groupId>
+			<artifactId>mongodb-driver-sync</artifactId>
+			<version>4.0.5</version><!--$NO-MVN-MAN-VER$-->
+			<scope>compile</scope> <!-- provided to NOT FIX the version -->
+		</dependency>
 
-        <!-- tests -->
-        <dependency>
+		<!-- tests -->
+		<dependency>
 			<artifactId>ff4j-test</artifactId>
 			<groupId>org.ff4j</groupId>
 			<version>${project.version}</version>
